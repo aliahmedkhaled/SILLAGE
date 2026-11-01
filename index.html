@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SILLAGE — architectural fragrances made to be remembered." />
+    <meta name="theme-color" content="#0b0b0a" />
+    <title>SILLAGE — Made to be remembered</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body class="sillage-intro">
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Sillage home">SILLAGE<span>®</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#collection">Fragrances</a><a href="#house">The house</a><a href="#journal">Journal</a>
+      </nav>
+      <div class="header-actions"><a class="shop-link" href="#collection">Shop the collection</a><button class="bag-button" id="bag-open" aria-label="Open shopping bag">Bag <b id="bag-count">0</b></button></div>
+    </header>
+
+    <main>
+      <section class="product-page" id="product-page" aria-live="polite" hidden></section>
+      <section class="hero hero--intro-playing" aria-labelledby="hero-title">
+        <video class="hero-media" autoplay muted playsinline preload="auto" id="hero-video" aria-hidden="true"></video>
+        <div class="hero-fallback" aria-hidden="true"></div>
+        <div class="hero-final-image" aria-hidden="true"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Fragrance, with presence</p>
+          <h1 id="hero-title">Leave a trace.</h1>
+          <p class="hero-description">Four distinctive fragrances.<br />One unmistakable signature.</p>
+          <a class="button button-light" href="#collection">Discover the collection <span>↘</span></a>
+        </div>
+        <div class="hero-foot"><span>Eau de parfum · Four signatures</span><span class="scroll-cue">Scroll to explore <i></i></span></div>
+      </section>
+
+      <section class="manifesto section-pad" aria-labelledby="manifesto-title">
+        <div class="section-index">01 <span>—</span> The beginning</div>
+        <div class="manifesto-content"><p class="eyebrow">A lasting impression</p><h2 id="manifesto-title">A scent<br /><em>that stays.</em></h2><p class="large-copy">Fragrance is not simply worn.<br />It becomes part of the way<br />you are remembered.</p></div>
+        <div class="manifesto-note">SILLAGE / 2026<br />A study in presence</div>
+      </section>
+
+      <section class="collection section-pad" id="collection" aria-labelledby="collection-title">
+        <div class="collection-heading"><div><p class="eyebrow">The art of selection</p><h2 id="collection-title">The<br /><em>collection.</em></h2></div><div class="collection-intro"><p class="collection-statement">Four expressions.<br /><em>Four distinct identities.</em></p><p class="section-intro">Discover a collection of distinctive fragrances, each created to express a different side of individuality.</p></div></div>
+        <div class="filter-row" role="group" aria-label="Filter fragrances"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="Woody">Woody</button><button class="filter" data-filter="Amber">Amber</button><button class="filter" data-filter="Oriental">Oriental</button><button class="filter" data-filter="Fresh">Fresh</button><button class="filter" data-filter="Floral">Floral</button></div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="scent-story" id="notes" aria-labelledby="notes-title">
+        <div class="notes-image image-slot image-oud"><div class="image-caption">The raw material <span>02 / 04</span></div></div>
+        <div class="notes-content section-pad"><p class="eyebrow">The architecture of scent</p><h2 id="notes-title">A fragrance<br /><em>in three acts.</em></h2><p class="notes-lead">Like memory, a fragrance reveals itself slowly. It begins as a whisper, becomes a presence, then settles into something entirely your own.</p><div class="note-list"><article><span>01</span><div><h3>Top notes</h3><p>The first impression. Bright, fleeting and impossible to ignore.</p></div><strong>+</strong></article><article><span>02</span><div><h3>Heart notes</h3><p>The fragrance’s true character, unfolding with warmth and depth.</p></div><strong>+</strong></article><article><span>03</span><div><h3>Base notes</h3><p>The lasting signature. What remains when everything else has faded.</p></div><strong>+</strong></article></div></div>
+      </section>
+
+      <section class="house-story" id="house" aria-labelledby="house-title"><div class="house-marker">03 <span>—</span> The house</div></section>
+
+      <section class="discovery section-pad" id="quiz" aria-labelledby="quiz-title"><div class="quiz-intro" id="quiz-intro"></div><div class="quiz-card" id="quiz-card"></div></section>
+
+      <section class="journal-section" id="journal" aria-labelledby="journal-title"></section>
+
+      <section class="newsletter section-pad"><div><p class="eyebrow">A quiet invitation</p><h2>Let the experience<br /><em>continue.</em></h2></div><div class="newsletter-form-wrap"><p>Be the first to discover new creations, exclusive releases and stories from SILLAGE.</p><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button type="submit">Subscribe <span>↗</span></button></form><p class="form-message" id="form-message" role="status"></p></div></section>
+    </main>
+
+    <footer class="footer section-pad"><div class="footer-top"><a class="wordmark" href="#top">SILLAGE<span>®</span></a><p>Some things are remembered<br />without being seen.</p><div class="footer-col"><span>Explore</span><a href="#collection">Fragrances</a><a href="#house">The house</a><a href="#journal">Journal</a></div><div class="footer-col"><span>Information</span><a href="#newsletter">Shipping</a><a href="#newsletter">Returns</a><a href="#newsletter">Contact</a></div></div><div class="footer-bottom"><span>© 2026 SILLAGE. All rights reserved.</span><span>Instagram &nbsp; Pinterest &nbsp; <a href="#top">Back to top ↑</a></span></div></footer>
+
+    <aside class="bag-drawer" id="bag-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><span>Your bag <b id="drawer-count">0</b></span><button id="bag-close" aria-label="Close shopping bag">×</button></div><div class="bag-items" id="bag-items"></div><div class="bag-footer"><div><span>Subtotal</span><strong id="bag-total">€0</strong></div><button class="button button-light" id="checkout-button">Proceed to checkout <span>↗</span></button><small>Checkout is a portfolio demonstration. No payment is processed.</small></div></aside><div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="modal" id="product-modal" aria-hidden="true"><div class="modal-panel" id="product-modal-content"></div></div>
+    <div class="modal" id="checkout-modal" aria-hidden="true"><div class="modal-panel checkout-panel"><button class="modal-close" data-close-modal>×</button><p class="eyebrow">A considered conclusion</p><h2>Complete<br /><em>your order.</em></h2><p class="modal-note">This checkout is a portfolio demonstration. No payment is processed.</p><div class="checkout-summary" id="checkout-summary"></div><div class="checkout-total"><span>Total</span><strong id="checkout-total">€0</strong></div><form id="checkout-form"><label>Name<input name="name" required placeholder="Your full name" /></label><label>Email<input name="email" type="email" required placeholder="you@example.com" /></label><label>Phone<input name="phone" type="tel" required pattern="[0-9+() .-]{7,}" placeholder="+20 100 000 0000" /></label><label>Shipping address<input name="address" required placeholder="Street, city, country" /></label><button class="button button-light" type="submit">Place demonstration order <span>↗</span></button><p class="form-message" id="checkout-message" role="status"></p></form></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
